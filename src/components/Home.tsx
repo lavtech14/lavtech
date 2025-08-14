@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
+import Services from './Services'
 
 const fadeInUp = keyframes`
   from {
@@ -229,15 +230,17 @@ const Home: React.FC = () => {
   }, []);
 
   return (
+    <>
     <HomeContainer ref={containerRef}>
       <Content>
         <HeroText>
           <Name>LavTech</Name>
-          <Title>Full Stack Developer & Creative Problem Solver</Title>
-          <Description>
-            We create beautiful, functional, and user-centered digital experiences. 
-            Passionate about clean code, innovative solutions, and turning ideas into reality.
-          </Description>
+          <Title>Innovative Software Solutions by Expert Developers</Title>
+        <Description>
+  We are a team of passionate developers delivering high-quality mobile and web applications.
+  From design to deployment, we turn your ideas into elegant digital solutions.
+</Description>
+
           <CTAButtons>
             <PrimaryButton to="/portfolio">View Our Work</PrimaryButton>
             <SecondaryButton to="/contact">Get In Touch</SecondaryButton>
@@ -255,8 +258,12 @@ const Home: React.FC = () => {
         <ScrollText>Scroll to explore</ScrollText>
         <ScrollArrow />
       </ScrollIndicator>
+      
     </HomeContainer>
+  <Services />
+    </>
   );
+  
 };
 
 export default Home; 

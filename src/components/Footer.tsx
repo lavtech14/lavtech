@@ -112,19 +112,7 @@ const Copyright = styled.p`
   margin: 0 0 1rem 0;
 `;
 
-const MadeWith = styled.p`
-  margin: 0;
-  font-size: 0.9rem;
-  
-  a {
-    color: #667eea;
-    text-decoration: none;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`;
+
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -157,7 +145,7 @@ const Footer: React.FC = () => {
                 🐙
               </SocialLink>
               <SocialLink 
-                href="mailto:lavtech@example.com" 
+                href="https://github.com/lavtech" 
                 aria-label="Email"
               >
                 📧
@@ -180,15 +168,15 @@ const Footer: React.FC = () => {
             <ContactInfo>
               <ContactItem>
                 <span>📧</span>
-                <span>lavtech@example.com</span>
+                <span>lavtech14@gmail.com</span>
               </ContactItem>
               <ContactItem>
                 <span>📱</span>
-                <span>+1 (555) 123-4567</span>
+                <span>+91 7675928015</span>
               </ContactItem>
               <ContactItem>
                 <span>📍</span>
-                <span>San Francisco, CA</span>
+                <span>Hyderabad</span>
               </ContactItem>
             </ContactInfo>
           </FooterSection>
@@ -198,9 +186,7 @@ const Footer: React.FC = () => {
           <Copyright>
             © {currentYear} LavTech. All rights reserved.
           </Copyright>
-          <MadeWith>
-            Made with ❤️ using <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a> and <a href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">Styled Components</a>
-          </MadeWith>
+         
         </FooterBottom>
       </FooterContent>
     </FooterContainer>

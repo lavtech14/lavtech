@@ -252,7 +252,18 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
+      const message = `
+Name: ${formData.name}
+Email: ${formData.email}
+Subject: ${formData.subject}
+Message: ${formData.message}
+  `;
+
+    const encodedMessage = encodeURIComponent(message.trim());
+  const phoneNumber = '917675928015'; // Replace with your WhatsApp number (without +)
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+     window.open(whatsappURL, '_blank');
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -283,7 +294,7 @@ const Contact: React.FC = () => {
               <ContactIcon>📧</ContactIcon>
               <ContactDetails>
                 <ContactLabel>Email</ContactLabel>
-                <ContactValue>lavtech@example.com</ContactValue>
+                <ContactValue>lavtech14@gmail.com</ContactValue>
               </ContactDetails>
             </ContactMethod>
             
@@ -291,7 +302,7 @@ const Contact: React.FC = () => {
               <ContactIcon>📱</ContactIcon>
               <ContactDetails>
                 <ContactLabel>Phone</ContactLabel>
-                <ContactValue>+1 (555) 123-4567</ContactValue>
+                <ContactValue>+91 7675928015</ContactValue>
               </ContactDetails>
             </ContactMethod>
             
@@ -299,7 +310,7 @@ const Contact: React.FC = () => {
               <ContactIcon>📍</ContactIcon>
               <ContactDetails>
                 <ContactLabel>Location</ContactLabel>
-                <ContactValue>San Francisco, CA</ContactValue>
+                <ContactValue>Hyderabad</ContactValue>
               </ContactDetails>
             </ContactMethod>
             
