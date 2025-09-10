@@ -223,7 +223,7 @@ const Portfolio: React.FC = () => {
       description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
       image: "📋",
       technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://todolist-five-lemon.vercel.app/",
       githubUrl: "#",
       category: "frontend"
     },
