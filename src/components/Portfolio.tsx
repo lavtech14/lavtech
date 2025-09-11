@@ -233,7 +233,7 @@ const Portfolio: React.FC = () => {
       description: "A weather application that displays current weather conditions, forecasts, and interactive maps using OpenWeatherMap API.",
       image: "🌤️",
       technologies: ["React", "JavaScript", "CSS3", "OpenWeatherMap API"],
-      liveUrl: "#",
+      liveUrl: "https://weatherapp-nu-drab.vercel.app/",
       githubUrl: "#",
       category: "frontend"
     },
