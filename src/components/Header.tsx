@@ -140,7 +140,7 @@ const Header: React.FC = () => {
             <NavLink to="/about" active={isActive('/about')} onClick={closeMobileMenu}>
               About
             </NavLink>
-            <NavLink to="/portfoliosssss" active={isActive('/portfolio')} onClick={closeMobileMenu}>
+            <NavLink to="/portfolio" active={isActive('/portfolio')} onClick={closeMobileMenu}>
               Portfolio
             </NavLink>
              <NavLink to="/teams" active={isActive('/teams')} onClick={closeMobileMenu}>
