@@ -243,7 +243,7 @@ const Portfolio: React.FC = () => {
       description: "A content management system for blogs with markdown support, user roles, and SEO optimization features.",
       image: "📝",
       technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      liveUrl: "#",
+      liveUrl: "https://blogapp-smoky-psi.vercel.app/",
       githubUrl: "#",
       category: "fullstack"
     },
@@ -253,7 +253,7 @@ const Portfolio: React.FC = () => {
       description: "A modern, responsive portfolio website built with React and styled-components, featuring smooth animations and mobile-first design.",
       image: "🎨",
       technologies: ["React", "TypeScript", "Styled Components", "React Router"],
-      liveUrl: "#",
+      liveUrl: "https://portfolio-six-coral-21.vercel.app/",
       githubUrl: "#",
       category: "frontend"
     },
