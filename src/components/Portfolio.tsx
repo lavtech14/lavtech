@@ -213,7 +213,7 @@ const Portfolio: React.FC = () => {
       description: "A full-stack e-commerce application with user authentication, product management, shopping cart, and payment integration using Stripe.",
       image: "🛒",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
-      liveUrl: "#",
+      liveUrl: "https://ecommapp-one.vercel.app/",
       githubUrl: "#",
       category: "fullstack"
     },

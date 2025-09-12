@@ -144,7 +144,7 @@ const Header: React.FC = () => {
               Portfolio
             </NavLink>
              <NavLink to="/teams" active={isActive('/teams')} onClick={closeMobileMenu}>
-    Teams
+    Team
   </NavLink>
             <NavLink to="/contact" active={isActive('/contact')} onClick={closeMobileMenu}>
               Contact
