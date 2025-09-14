@@ -143,6 +143,9 @@ const Header: React.FC = () => {
             <NavLink to="/portfolio" active={isActive('/portfolio')} onClick={closeMobileMenu}>
               Portfolio
             </NavLink>
+              <NavLink to="/games" active={isActive('/games')} onClick={closeMobileMenu}>
+              Games
+            </NavLink>
              <NavLink to="/teams" active={isActive('/teams')} onClick={closeMobileMenu}>
     Team
   </NavLink>

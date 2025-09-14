@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Teams from './components/teams'
 import Services from './components/Services'
+import Games from './components/Games'
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/games" element={<Games/>} />
           <Route path="/teams" element={<Teams />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Services" element={<Services />} />
